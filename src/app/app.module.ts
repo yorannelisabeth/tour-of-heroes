@@ -1,15 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { FormsModule } from '@angular/forms';//import of angular form module
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeroesListComponent } from './heroes-list/heroes-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroesListComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
